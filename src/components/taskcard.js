@@ -11,11 +11,10 @@ export default function TaskCard({
     id,
     name,
     description,
-    is_complete,
-    deadline,
+    status,
+    duedate,
     user_id,
-    category_id,
-    priority
+    
   },
   users,
   url,
@@ -23,11 +22,7 @@ export default function TaskCard({
 }) {
 
   let taskUser = users.find(u => u.id == user_id);
-  let categories = {
-    1: "Home",
-    2: "Work",
-    3: "Personal"
-  }
+  
 
   function handleCompleteToggle() {
     fetch(`${url}/tasks/${id}`, {
@@ -65,7 +60,6 @@ export default function TaskCard({
         <h1>{name}</h1>
         <h3>{description}</h3>
         <h3>Assigned to: {taskUser.name}</h3>
-        <h3>Category: {categories[`${category_id}`]} | Priority: {priority} </h3>
         <Button variant="contained" onClick={handleCompleteToggle}>{is_complete? "Mark Incomplete" : "Complete!"}</Button>
       </Box>
     </Container>

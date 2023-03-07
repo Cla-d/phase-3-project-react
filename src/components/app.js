@@ -8,7 +8,7 @@ import TaskPage from './taskpage';
 import EditTaskForm from "./edittaskform";
 import UserPage from "./userpage";
 
-export default function App() {
+ function App() {
 
   const url = "http://localhost:9292"
   // fetch Users and Tasks here, pass as props to TaskPage, NewUserForm, NewTaskForm, EditTaskForm
@@ -28,7 +28,6 @@ export default function App() {
       .then((data) => setTasks([...data]))
   }, []);
 
-  // advanced hooks - Phase 2 - React Context
   
   const handleTaskFilter = (e) => {
     e.preventDefault();
@@ -79,3 +78,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
