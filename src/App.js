@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import TaskList from "./components/TaskList"
+
 function App() {
 
   const [tasks, setTasks]= useState([])
