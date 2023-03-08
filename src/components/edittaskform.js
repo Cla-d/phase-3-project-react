@@ -74,7 +74,7 @@ export default function EditTaskForm({ tasks, users, url, handleEditTask, handle
   return (
     <Container component="main" maxWidth="xs">
       <Box
-        backgroundColor='primary'
+        backgroundColor='secondary'
         component='form'
         sx={{
           marginTop: 8,

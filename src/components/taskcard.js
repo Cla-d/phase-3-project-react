@@ -51,7 +51,7 @@ export default function TaskCard({
         sx={{
           width: 400,
           height: 325,
-          backgroundColor: 'primary.dark',
+          backgroundColor: '#edede9',
           margin: 10
         }}
         >

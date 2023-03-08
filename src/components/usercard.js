@@ -43,7 +43,7 @@ export default function UserCard({
         sx={{
           width: 450,
           height: '100%',
-          backgroundColor: 'primary.dark',
+          backgroundColor: '#edede9',
           margin: 10,
           padding: 0.5
         }}
